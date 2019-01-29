@@ -55,6 +55,8 @@ def _get_bleach_kwargs():
         'em',
         'strong',
         'ul',
+        'sup',
+        'sub',
         'li',
         'dl',
         'dd',
