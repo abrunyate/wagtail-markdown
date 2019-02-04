@@ -32,7 +32,7 @@ def render_markdown(text, context=None, extensions=''):
 
 def _transform_markdown_into_html(text, extensions):
     markdown_kwargs = _get_markdown_kwargs()
-    markdown_kwargs['extensions']+=extensions.split()
+    markdown_kwargs['extensions'] += extensions.split()
     return markdown.markdown(smart_text(text), **markdown_kwargs)
 
 
