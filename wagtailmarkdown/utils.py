@@ -58,7 +58,6 @@ def _get_bleach_kwargs():
         'strong',
         'ul',
         'sup',
-        'sub',
         'li',
         'dl',
         'dd',
