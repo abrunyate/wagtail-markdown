@@ -55,7 +55,7 @@ def _sanitise_markdown_html(markdown_html, extensions):
             for tag, attrs in extra["attributes"].items():
                 for att in attrs:
                     if att not in bleach_kwargs["attributes"][tag]:
-                        bleah_kwargs["attributes"][tag].append(att)
+                        bleach_kwargs["attributes"][tag].append(att)
         if "styles" in extra:
             for style in extra["styles"]:
                 if style not in bleach_kwargs["styles"]:
