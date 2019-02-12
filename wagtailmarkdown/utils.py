@@ -83,7 +83,7 @@ def _get_extension_bleach_kwargs(extension_name):
     """
     # Get class name (if provided): `path.to.module:ClassName`
     ext_name, class_name = extension_name.split(':', 1) \
-        if ':' in ext_name else (ext_name, '')
+        if ':' in extension_name else (extension_name, '')
 
     try:
         module = importlib.import_module(ext_name)
