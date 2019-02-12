@@ -44,7 +44,6 @@ def _sanitise_markdown_html(markdown_html, extensions):
        Note that we only process the 'tags', 'attributes', and 'styles' keywords.
     """
     bleach_kwargs = _get_base_bleach_kwargs()
-    print(bleach_kwargs)
     for extension_name in extensions.split():
         extra = _get_extension_bleach_kwargs(extension_name)
         if "tags" in extra:
@@ -61,7 +60,6 @@ def _sanitise_markdown_html(markdown_html, extensions):
                 if style not in bleach_kwargs["styles"]:
                     bleach_kwargs["styles"].append(style)
 
-    print(bleach_kwargs)
     return bleach.clean(markdown_html, **bleach_kwargs)
 
 
